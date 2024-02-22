@@ -1,5 +1,13 @@
-Default layout works
-<Header>Header</Header>
-<nav>Sidenav</nav>
-<router-outlet></router-outlet>
-<footer>Footer</footer>
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav opened="true" position="start" mode="side" role="navigation">
+    Nav area
+  </mat-sidenav>
+
+  <mat-sidenav-content role="main">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

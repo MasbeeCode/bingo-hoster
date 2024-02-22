@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./default-layout.component.css'],
 })
 export class DefaultLayoutComponent {
+  title: string = 'bingo-hoster-app';
+
   constructor() {}
 }
