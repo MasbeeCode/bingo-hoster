@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DefaultLayoutComponent } from './layouts/default/default-layout.component';
-import { BingDashboardComponent } from './modules/bingos/bingo-dashboard/bingo-dashboard.component';
+import { BingoDashboardComponent } from './modules/bingos/bingo-dashboard/bingo-dashboard.component';
 
 const routes: Routes = [
   {
@@ -9,7 +9,7 @@ const routes: Routes = [
     path: '',
     children: [
       { path: '', redirectTo: '/bingo', pathMatch: 'full' }, //Empty route handler
-      { path: 'bingo', component: BingDashboardComponent },
+      { path: 'bingo', component: BingoDashboardComponent },
       {
         path: '**',
         redirectTo: '/bingo',

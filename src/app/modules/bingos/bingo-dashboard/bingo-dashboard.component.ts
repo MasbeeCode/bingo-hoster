@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './bingo-dashboard.component.html',
   styleUrls: ['./bingo-dashboard.component.css'],
 })
-export class BingDashboardComponent {
+export class BingoDashboardComponent {
   constructor() {}
 }

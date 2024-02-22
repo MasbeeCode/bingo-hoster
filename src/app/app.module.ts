@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DefaultLayoutComponent } from './layouts/default/default-layout.component';
+import { SharedModule } from './modules/shared/display-grid/shared.module';
+import { BingosModule } from './modules/bingos/bingos.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { DefaultLayoutComponent } from './layouts/default/default-layout.compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule,
+    BingosModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
